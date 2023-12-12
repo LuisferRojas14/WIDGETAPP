@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgetsapp/config/theme/theme_app.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,8 +10,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Materialpp(
-      home: Scaffold(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme(selectedColor: 13).getTheme(),
+      home: const Scaffold(
         body: Center(
           child: Text('Hello World!'),
         ),
