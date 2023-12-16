@@ -9,15 +9,13 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Flutter + material 3'),
       ),
-      body: _HomeView(),
+      body: const _HomeView(),
     );
   }
 }
 
 class _HomeView extends StatelessWidget {
-  const _HomeView({
-    super.key,
-  });
+  const _HomeView();
 
   @override
   Widget build(BuildContext context) {
