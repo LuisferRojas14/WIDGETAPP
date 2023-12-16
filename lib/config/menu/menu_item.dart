@@ -22,8 +22,8 @@ const appMenuItems = <MenuItem>[
       icon: Icons.smart_button_outlined),
 
   MenuItem(
-      title: 'Contadores',
-      subTitle: 'Contadores con Provider',
-      link: '/counter',
+      title: 'Tarjetas',
+      subTitle: 'Contadores de tarjetas',
+      link: '/cards',
       icon: Icons.add_circle_outline),
 ];

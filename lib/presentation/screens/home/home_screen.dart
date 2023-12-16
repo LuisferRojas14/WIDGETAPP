@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:widgetsapp/config/menu/menu_item.dart';
-
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -22,9 +21,9 @@ class _HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     return ListView.builder(
+    return ListView.builder(
       itemCount: appMenuItems.length, //esto es el largo de la lista
-      itemBuilder: (context, index){
+      itemBuilder: (context, index) {
         final menuItem = appMenuItems[index];
         return _CustomListTile(menuItem: menuItem);
       },
@@ -47,11 +46,14 @@ class _CustomListTile extends StatelessWidget {
       leading: Icon(menuItem.icon, color: colors.primary),
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subTitle),
-      onTap: (){
-        //TODO: navegar a la ruta
-        
+      onTap: () {
+        // Navigator.of(context).push(
+        //   MaterialPageRoute(
+        //     builder: (context) => const ButtonScreen(),
+        //   ),
+        // );
+        Navigator.pushNamed(context, menuItem.link);
       },
-      
     );
   }
 }
