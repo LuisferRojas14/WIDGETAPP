@@ -26,4 +26,11 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Contadores de tarjetas',
       link: '/cards',
       icon: Icons.add_circle_outline),
+
+      MenuItem(
+        title: 'ProgressIndicators',
+        subTitle: 'Generales y controladores',
+        link: '/progress',
+        icon: Icons.refresh_rounded
+      ),
 ];
