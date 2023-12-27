@@ -7,6 +7,14 @@ class ProgressScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          // actions: [
+          //   IconButton(
+          //     icon: const Icon(Icons.arrow_back),
+          //     onPressed: () {
+          //       Navigator.pop(context);
+          //     },
+          //   ),
+          // ],
           title: const Text('Progress Indicators'),
         ),
         body: const _ProgressView());
