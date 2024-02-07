@@ -4,7 +4,7 @@ import 'package:widgetsapp/presentation/screens/screens.dart';
 
 
 final appRouter = GoRouter(
-  initialLocation: '/snackbar',
+  initialLocation: '/',
   routes: [
     GoRoute(
       path: '/',
@@ -33,6 +33,11 @@ final appRouter = GoRouter(
       name: SnackbarScreen.name,
       builder: (context, state) => const SnackbarScreen(),
     ),
+
+    GoRoute(
+    path: '/animated',
+    name: AnimatedScreen.name,
+    builder: (context, state) => const AnimatedScreen()),
   ],
 
 );
