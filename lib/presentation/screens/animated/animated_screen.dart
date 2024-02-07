@@ -8,7 +8,6 @@ class AnimatedScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        
         title: const Text('Animated Container'),
       ),
       body: Center(
