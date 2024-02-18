@@ -10,7 +10,6 @@ class AnimatedScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Animated Container'),
       ),
-  //
       body: Center(
         child: AnimatedContainer(
           duration: const Duration(microseconds: 500),
