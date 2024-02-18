@@ -4,7 +4,7 @@ import 'package:widgetsapp/presentation/screens/screens.dart';
 
 
 final appRouter = GoRouter(
-  initialLocation: '/',
+  initialLocation: '/animated',
   routes: [
     GoRoute(
       path: '/',
