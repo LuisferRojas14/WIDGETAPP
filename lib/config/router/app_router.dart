@@ -2,48 +2,42 @@
 import 'package:go_router/go_router.dart';
 import 'package:widgetsapp/presentation/screens/screens.dart';
 
-
 final appRouter = GoRouter(
-  initialLocation: '/',
+  initialLocation: '/ui-controls',
   routes: [
     GoRoute(
       path: '/',
-      name:HomeScreen.name,
+      name: HomeScreen.name,
       builder: (context, state) => const HomeScreen(),
     ),
-  
-   GoRoute(
+    GoRoute(
       path: '/buttons',
       name: ButtonScreen.name,
       builder: (context, state) => const ButtonScreen(),
     ),
-  
-   GoRoute(
+    GoRoute(
       path: '/cards',
       name: CardsScreen.name,
       builder: (context, state) => const CardsScreen(),
     ),
-
-    GoRoute(path: '/progress',
+    GoRoute(
+      path: '/progress',
       name: ProgressScreen.name,
       builder: (context, state) => const ProgressScreen(),
     ),
-
-    GoRoute(path: '/snackbar',
+    GoRoute(
+      path: '/snackbar',
       name: SnackbarScreen.name,
       builder: (context, state) => const SnackbarScreen(),
     ),
-
     GoRoute(
-    path: '/animated',
-    name: AnimatedScreen.name,
-    builder: (context, state) => const AnimatedScreen()),
-
+        path: '/animated',
+        name: AnimatedScreen.name,
+        builder: (context, state) => const AnimatedScreen()),
     GoRoute(
       path: '/ui-controls',
       name: UiControlsScreen.name,
       builder: (context, state) => const UiControlsScreen(),
     ),
   ],
-
 );
