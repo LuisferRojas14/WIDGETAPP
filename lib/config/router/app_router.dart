@@ -3,7 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:widgetsapp/presentation/screens/screens.dart';
 
 final appRouter = GoRouter(
-  initialLocation: '/ui-controls',
+  initialLocation: '/tutorial',
   routes: [
     GoRoute(
       path: '/',
@@ -38,6 +38,11 @@ final appRouter = GoRouter(
       path: '/ui-controls',
       name: UiControlsScreen.name,
       builder: (context, state) => const UiControlsScreen(),
+    ),
+    GoRoute(
+      path: '/tutorial',
+      name: AppTutorialScreen.name,
+      builder: (context, state) => const AppTutorialScreen(),
     ),
   ],
 );
