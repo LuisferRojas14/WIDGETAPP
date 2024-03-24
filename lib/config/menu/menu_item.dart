@@ -48,6 +48,6 @@ const appMenuItems = <MenuItem>[
   MenuItem(
       title: 'Introduccion a la aplicacion',
       subTitle: 'Pequeño tutorial introductorio',
-      link: '/tutotial',
+      link: '/tutorial',
       icon: Icons.accessible_rounded),
 ];

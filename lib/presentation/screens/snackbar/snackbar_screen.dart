@@ -19,22 +19,23 @@ class SnackbarScreen extends StatelessWidget {
 
   void openDialog(BuildContext context) {
     showDialog(
-      context: context,
-      barrierDismissible: false,//para obligar a las personas que deben seleccionar una opcion para cerrar el dialogo
-      builder: (context) =>  AlertDialog(
-        title: Text('¿Estás seguro?'),
-        content: Text('¿Estás seguro de que quieres hacer esto?'),
-        actions: [
-          TextButton(
-            onPressed: () => context.pop(),
-            child: const Text('Cancelar')),
-
-            FilledButton(onPressed: () => context.pop(),
-            child: const Text('Aceptar'))
-        ],
-      )
-    );
+        context: context,
+        barrierDismissible:
+            false, //para obligar a las personas que deben seleccionar una opcion para cerrar el dialogo
+        builder: (context) => AlertDialog(
+              title: const Text('¿Estás seguro?'),
+              content: const Text('¿Estás seguro de que quieres hacer esto?'),
+              actions: [
+                TextButton(
+                    onPressed: () => context.pop(),
+                    child: const Text('Cancelar')),
+                FilledButton(
+                    onPressed: () => context.pop(),
+                    child: const Text('Aceptar'))
+              ],
+            ));
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,8 +55,7 @@ class SnackbarScreen extends StatelessWidget {
                 },
                 child: const Text('Licencia usadas')),
             FilledButton.tonal(
-              onPressed: () =>
-                openDialog(context),
+              onPressed: () => openDialog(context),
               child: const Text('Mostrar Dialogo'),
             )
           ],
