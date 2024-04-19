@@ -57,7 +57,6 @@ class _ThemeChangerView extends ConsumerWidget {
             // ref.read(selectedColorProvider.notifier).state = index;
             ref.watch(themeNotifierProvide.notifier)
             .changeColorIndex(index);
-
           },
           );
 
